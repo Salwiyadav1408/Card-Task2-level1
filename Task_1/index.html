@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Centered Bulma Card</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family:Times new roman;
+    }
+    .center-screen {
+      display: flex;
+      align-items: center;     
+      justify-content: center; 
+      height: 100vh;          
+    }
+  </style>
+</head>
+<body>
+    
+
+    <section class="hero is-black">
+ 
+  <div class="hero-head">
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <strong>Klasko</strong>
+          </a>
+          <span class="navbar-burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item has-text-white" href="#">Home</a>
+            <a class="navbar-item has-text-white" href="#" >Products</a>
+            <a class="navbar-item has-text-white" href="#" >About Us</a>
+            <a class="navbar-item has-text-white" href="#">Store</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Hero body (optional content) -->
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title has-text-white" style="font-family:Times new roman;">Welcome to My Website</h1>
+      <h2 class="subtitle has-text-white" style="font-family:Times new roman;">Klasko is a modern fashion brand redefining style with elegance and edge. From timeless classics to bold new trends, we craft pieces that empower individuality. Designed with passion and worn with confidence, Klasko blends comfort with couture. Discover fashion that speaks your vibe — only at Klasko</h2>
+    </div>
+  </div>
+</section>
+
+  <section class="section">
+  <div class="container">
+    <div class="columns is-multiline is-centered">
+
+      <div class="column is-12-mobile is-6-tablet is-3-desktop">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://i.pinimg.com/736x/9a/a0/bc/9aa0bc99645d66f1949ddefa3f700d0f.jpg" alt="Placeholder">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">Formal wear</p>
+            <p>This card is responsive and adjusts layout based on screen size.</p>
+          </div>
+        </div>
+      </div>
+
+   
+      <div class="column is-12-mobile is-6-tablet is-3-desktop">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://i.pinimg.com/736x/9a/a0/bc/9aa0bc99645d66f1949ddefa3f700d0f.jpg" alt="Placeholder">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">Formal wear</p>
+            <p>This card is responsive and adjusts layout based on screen size.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-12-mobile is-6-tablet is-3-desktop">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://i.pinimg.com/736x/9a/a0/bc/9aa0bc99645d66f1949ddefa3f700d0f.jpg" alt="Placeholder">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">Formal wear</p>
+            <p>This card is responsive and adjusts layout based on screen size.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column is-12-mobile is-6-tablet is-3-desktop">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-4by3">
+              <img src="https://i.pinimg.com/736x/9a/a0/bc/9aa0bc99645d66f1949ddefa3f700d0f.jpg" alt="Placeholder">
+            </figure>
+          </div>
+          <div class="card-content">
+            <p class="title is-4">Formal wear</p>
+            <p>This card is responsive and adjusts layout based on screen size.</p>
+          </div>
+        </div>
+      </div>
+
+      
+
+    </div>
+  </div>
+</section>
+
+<!-- Javascript for hamburger functionality -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const burger = document.querySelector('.navbar-burger');
+      const menu = document.getElementById(burger.dataset.target);
+
+      burger.addEventListener('click', () => {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+      });
+    });
+  </script>
+</body>
+</html>
+
+
+</body>
+</html>
